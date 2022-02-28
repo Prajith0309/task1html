@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+    <script>
+        function submitted(){
+    alert ("your data is successfully submitted!");
+}
+    </script>
+    <img src="penguin hello.gif"/>
+</head>
+<body>
+    <h1>Input tags snippet to show default values for all Form elements
+    </h1>
+    <form onsubmit="submitted()">
+      <fieldset>
+        <legend> MY FORM:</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname" value="name" autofocus required>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname" value="name" required><br>
+         <label for="pwd">Password:</label>
+         <input type="password" id="pwd" name="pwd" required><br>
+         <label for="DOB">DOB:</label>
+         <input type="date" id="DOB" name="DOB" required><br>
+         <label for="pin">pin code</label>
+         <input type="number" name="pin" placeholder="6xx25x"><br>
+         <label for="time selection">Select a time:</label>
+         <input type="time" id="time selection" name="time selection"><br>
+         <label for="week">Select a week:</label>
+         <input type="week" id="week" name="week"><br>
+         <label for="month">select a month:</label>
+         <input type="month" id="month" name="month"><br>
+         <label for="fname">Only read:</label>
+         <input type="text" id="input attribute" name="input attribute" value="can't change" readonly><br>
+         <label for="fname">Disabled:</label>
+         <input type="text" id="input attribute" name="input attribute" value="can't change" disabled><br>
+         <label for="gender">Gender</label><br>
+         <input type="radio" value="male">male
+         <input type="radio" value="female">female<br>
+         <label for="percentage"> qualifying score:</label>
+          <select id="percentage" name="percentage" size="3">
+          <option value="Above 90%">Above 90%</option>
+          <option value="71% to 90%">71% to 90%</option>
+          <option value="Above 50%">Above 50%</option>
+          <option value="Below 35%">Below 35%</option>
+          </select>
+          <br>
+          <label for="color">Choose your favourite color</label>
+          <input type="color" name="color" ><br>
+          <label for="range">Choose a range</label>
+          <input type="range" name="range" ><br>
+          <label for="message">personal information :</label><br>
+          <textarea name="message" rows="8" cols="60">
+            your personal information.
+            </textarea>
+            <input type="image" name="image" alt="image" src="silicon-valley.jpg" width="500" height="300"><br>
+            <label for="myfile">Resume:</label>
+            <input type="file" id="myfile" name="myfile">
+       <label for="programming language">Select your preffered programming language:</label>
+        <input list="programming language">
+        <datalist id="programming language">
+        <option value="java">
+        <option value="swift">
+        <option value="python">
+        <option value="javascript">
+        </datalist><br>
+        <div> languages known:</div>
+        <label for="language1">Tamil</label>
+        <input type="checkbox" id="language1" name="language1">
+        <br>
+        <label for="language2">English</label>
+        <input type="checkbox" id="language2" name="language2">
+        <br>
+        <label for="language3">Hindi</label>
+        <input type="checkbox" id="language3" name="language3">
+        <br>
+        <label for="contact no">Enter a phone number:</label>
+        <input type="number" id="contact no" name="contact no" placeholder="0123456789"pattern="[0-9]{1o}"><br>
+        <div> for more details:</div>
+        <a href=" https://google.com" target="_blank"> click me</a><br>
+        <label for="search">search</label>
+        <input type="search" name="search" ><br>
+        <label for="homepage">source code</label>
+        <input type="url" id="homepage" name="homepage">
+        <button type="button" onclick="alert(`please verify the entered data and click submit`)">Click Me!</button>
+        <input type="image" src="image buttonb.jpg" alt="Submit" width="60" height="60">
+        <input type="reset" value="reset"><br>
+          </fieldset>
+    </form>
+</body>
+</html>
